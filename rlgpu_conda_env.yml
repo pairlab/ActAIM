@@ -1,0 +1,9 @@
+name: afford
+channels:
+  - pytorch
+  - defaults
+dependencies:
+  - python=3.8
+  - scipy=1.5.0
+  - tensorboard=2.2.1
+  - cudatoolkit=11.6

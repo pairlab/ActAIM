@@ -1,0 +1,17 @@
+{
+// visual params
+object id,
+initial state,   // dof_pos, default: (object_dof_upper_limits + object_dof_lower_limits) * 0.5
+
+final state,     // dof_pos
+                 // training signal might just be "norm(final - initial) > delta" before we add visual stuff
+
+initial point cloud,
+final point cloud       // if available interaction
+
+
+// affordance params
+position,       // interact position (in world frame)
+rotation,       // gripper rotation (calculate eef rotation)
+wrench,          // seems like 'wrench' here is really just a direction (including rotations) to move gripper in
+}
